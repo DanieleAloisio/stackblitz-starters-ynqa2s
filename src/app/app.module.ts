@@ -7,12 +7,17 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { InterceptorService } from './service/data/interceptor.service';
 import { LoaderComponent } from './common/loader/loader.component';
+import { ErrorPageComponent } from './pages/error-page/error-page.component';
+import { ResultComponent } from './pages/result/result.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoaderComponent
+    LoaderComponent,
+    ErrorPageComponent,
+    ResultComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [
