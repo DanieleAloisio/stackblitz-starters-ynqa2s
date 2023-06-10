@@ -1,3 +1,8 @@
-<p>
-loader works!
-</p>
+<ng-container *ngIf="loading">
+  <div class="loader">
+    <div class="loaderBackground"></div>
+    <div class="text-center">
+      <div class="lds-dual-ring"></div>
+    </div>
+  </div>
+</ng-container>
